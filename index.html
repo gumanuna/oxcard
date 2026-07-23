@@ -76,7 +76,9 @@
         linear-gradient(
           180deg,
           var(--yellow) 0%,
-          var(--yellow) 100%
+          var(--yellow) 35%,
+          var(--blue) 35%,
+          var(--blue) 100%
         );
       box-shadow: 0 0 38px rgba(16, 24, 32, 0.22);
     }
@@ -169,7 +171,7 @@
       padding: 10px;
       border: 4px solid var(--ink);
       border-radius: 22px;
-      background: var(--navy);
+      background: var(--white);
       box-shadow: var(--shadow);
       overflow: hidden;
     }
@@ -183,8 +185,9 @@
       padding: 18px 16px;
       border-radius: 14px;
       background:
-        radial-gradient(circle at 88% 12%, rgba(0,168,232,.16) 0 42px, transparent 44px),
-        var(--navy);
+        radial-gradient(circle at 88% 12%, rgba(0,168,232,.22) 0 42px, transparent 44px),
+        radial-gradient(circle at 12% 88%, rgba(242,237,0,.22) 0 50px, transparent 52px),
+        var(--white);
 
       /* 가로 스크롤은 차단하고, 필요할 때만 세로 스크롤 허용 */
       overflow-x: hidden;
@@ -197,7 +200,7 @@
       width: 100%;
       max-width: 100%;
       min-width: 0;
-      color: var(--white);
+      color: var(--ink);
       font-size: 26px;
       font-weight: 800;
       text-align: center;
